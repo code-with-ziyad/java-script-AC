@@ -28,17 +28,20 @@
 
 // Variable ko value assign/update karne ke liye:
 
-// let x = 10;
+ let x = 10;
 
-// x += 5;  // x = x + 5
+ x += 5;
+ console.log("x ki value "+ x);
+   // x = x + 5
 // x -= 2;  // x = x - 2
 // x *= 2;  // x = x * 2
 // x /= 2;  // x = x / 2
 // x %= 3;  // x = x % 3
+
 // 3. Comparison Operators
 
 // Do values ko compare karte hain aur result true ya false hota hai.
-
+""
 // 10 == "10"   // true
 // 10 === "10"  // false
 // 10 != 5      // true
@@ -117,12 +120,12 @@ else{
 //let yourname  = prompt("input your name: ");
 //console.log(yourname);
 
-let Num = prompt("Input a number: ");
+// let Num = prompt("Input a number: ");
 
-if (Num % 5 === 0){
-    console.log(Num + " is a multiple of 5");
+// if (Num % 5 === 0){
+//     console.log(Num + " is a multiple of 5");
     
-}
-else{
-    console.log(Num + " is not a multiple of 5");
-}
+// }
+// else{
+//     console.log(Num + " is not a multiple of 5");
+// }

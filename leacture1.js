@@ -6,10 +6,9 @@ console.log("my name is " + fullname + " i am " + age + " years old");
 
 // bigint
 number = 89478878658n;
-console.log(typeof (number));
+console.log(typeof (number));  // bigint
 
-
-// object
+// // object
 
 const student = {
     name: "Ziyad Ahmed",
