@@ -1,0 +1,13 @@
+h1{
+    color: yellow;
+    background: #652b2b;
+}
+body{
+    background: rgb(33, 31, 31);
+    color: white;
+}
+button{
+    background: green;
+    color: black;
+    cursor: pointer;
+}
