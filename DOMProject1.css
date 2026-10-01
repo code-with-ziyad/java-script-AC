@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Color Boxes */
+#white,
+#green,
+#yellow,
+#blue {
+    width: 110px;
+    height: 110px;
+    border-radius: 18px;
+    cursor: pointer;
+    border: 3px solid white;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Hover Effect */
+#white:hover,
+#green:hover,
+#yellow:hover,
+#blue:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Colors */
+#white {
+    background: #ffffff;
+    border-color: #ddd;
+}
+
+#green {
+    background: #22c55e;
+}
+
+#yellow {
+    background: #facc15;
+}
+
+#blue {
+background: #3b82f6;
+}
