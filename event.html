@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black " >
+    <h2 style="color: aliceblue;">Amazing image</h2>
+    <ul id="ul" >
+        <li><img id="girl" style="width: 200px; height: 200px;" src="images (1).jpg" alt=""></li>
+         <li><img style="width: 200px; height: 200px;" src="images (2).jpg" alt=""></li>
+          <li><img style="width: 200px; height: 200px;" src="images (3).jpg" alt=""></li>
+           <li><img style="width: 200px; height: 200px;" src="images (4).jpg" alt=""></li>
+            <li><img  style="width: 200px; height: 200px;"src="images (5).jpg" alt=""></li>
+             <li><img style="width: 200px; height: 200px;" src="images.jpg" alt=""></li>
+              <li><img  style="width: 200px; height: 200px;"src="download (1).jpg" alt=""></li>
+    </ul>
+</body>
+<script>
+// document.getElementById('girl').onclick = function () {
+//     alert("Girl click")
+// }
+
+// attachEvent()
+// jQuerry - on
+// type, timestamp, defaultPrevented
+// target, toElement, srcElement, currentTarget, 
+//clienttx, clientY, screenX, screenY
+//altkey, ctrlkey, shiftkey, keyCode  
+
+// document.getElementById('ul').addEventListener('click', function (e) {
+// console.log("clicked inside the ul");
+// }, false)
+
+// document.getElementById('girl').addEventListener('click', function (e) {
+// console.log("girl click ");
+// e.stopPropagation()
+// }, false)
+
+document.querySelector('#ul').addEventListener
+('click', function (e) {
+    console.log(e.target.parentNode);
+    if (e.target.tagName === 'IMG') {
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+        
+    }
+    })
+
+//removeIt.parentNode.removeChild(removeIt)
+
+
+
+</script>
+</html>
