@@ -15,24 +15,26 @@
 </body>
 <script>
 
- const sayDate =  function () {
-    console.log(Date.now());       
- }
+const SayZiyad = function () {
+    console.log("Ziyad Ahmed");
+    
+}
+const changeText = function () {
+    document.querySelector('h1').
+    innerHTML = "learning JS with Chai"
+}
 
-  let intervalId;
+const changeMe = setTimeout(changeText, 2000);
 
- document.querySelector('#start').addEventListener('click', function () {
-         if (intervalId === undefined) {
-            intervalId = setInterval(sayDate, 1500);
-        }
- })
 
-  document.querySelector('#stop').addEventListener('click', function () {
-       clearInterval(intervalId)
-       intervalId = undefined;
-       
- })
+document.querySelector('#stop').
+addEventListener('click', function () {
+    clearTimeout(changeMe)
+    console.log("Stop")
+    
+})
 
    
+
 </script>
 </html>
